@@ -1,0 +1,7 @@
+{
+  "name": "GymPro AI - Meu Treino",
+  "description": "Um aplicativo de academia completo com divisão de treinos A-E, instruções detalhadas, acompanhamento de séries e dicas de execução geradas por IA.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
