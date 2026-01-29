@@ -1,11 +1,11 @@
 
-import React, { useState, useEffect } from 'react';
-import { WorkoutDay, Exercise } from './types';
-import { WORKOUTS, CARDIO_INFO } from './constants';
-import Header from './components/Header';
-import WorkoutSelector from './components/WorkoutSelector';
-import ExerciseItem from './components/ExerciseItem';
-import ExerciseModal from './components/ExerciseModal';
+import React, { useState } from 'react';
+import { WorkoutDay, Exercise } from './types.ts';
+import { WORKOUTS, CARDIO_INFO } from './constants.tsx';
+import Header from './components/Header.tsx';
+import WorkoutSelector from './components/WorkoutSelector.tsx';
+import ExerciseItem from './components/ExerciseItem.tsx';
+import ExerciseModal from './components/ExerciseModal.tsx';
 
 const App: React.FC = () => {
   const [selectedDay, setSelectedDay] = useState<WorkoutDay>(WorkoutDay.A);
@@ -59,7 +59,6 @@ const App: React.FC = () => {
         </div>
       </main>
 
-      {/* Floating Action Button for Workout Completion or Log (Visual Only) */}
       <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-full max-w-xs px-4">
         <button className="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-4 rounded-full shadow-lg shadow-emerald-500/20 transition-all active:scale-95 flex items-center justify-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
